@@ -1,10 +1,9 @@
-require 'pry'
-
 def find_element_index(array, value_to_find)
-  array.each do |index|
-    if value_to_find==index do
-      return array.find_index(index)
-    end
-  end
-end
+ i=0
+ while i<array.length do
+   if array[i]==value_to_find
+     return i
+   end
+   i+=1
+ end
 end
